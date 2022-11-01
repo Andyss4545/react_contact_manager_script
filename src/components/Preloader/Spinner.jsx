@@ -4,7 +4,7 @@ import SpinnerImg from "../../Assets/loading.gif";
 let Spinner = () => {
   return (
     <React.Fragment>
-      <img src={SpinnerImg} alt="" />
+      <img className="spinner" src={SpinnerImg} alt="" />
     </React.Fragment>
   );
 };

@@ -82,9 +82,7 @@ let ContactList = () => {
     }
   };
 
-  return loading ? (
-    <SpinnerImg />
-  ) : (
+  return (
     <React.Fragment>
       {/* <pre>{JSON.stringify(search.text)}</pre> */}
       <div className="container">
@@ -121,65 +119,69 @@ let ContactList = () => {
         </div>
       </div>
 
-      <div className="container">
-        <div className="row">
-          {Object.keys(filterContacts).length > 0 &&
-            Contacts.map((contact) => {
-              return (
-                <div key={contact.id} className="col-md-6">
-                  <div className="card my-3">
-                    <div className="card-body">
-                      <div className="row ">
-                        <div className="bgprofile align-item-center">
-                          <img
-                            className="contact-img img-fluid"
-                            src={contact.photo}
-                            alt=""
-                          />
+      {loading ? (
+        <SpinnerImg />
+      ) : (
+        <div className="container">
+          <div className="row">
+            {Object.keys(filterContacts).length > 0 &&
+              Contacts.map((contact) => {
+                return (
+                  <div key={contact.id} className="col-md-6">
+                    <div className="card my-3">
+                      <div className="card-body">
+                        <div className="row ">
+                          <div className="bgprofile align-item-center">
+                            <img
+                              className="contact-img img-fluid"
+                              src={contact.photo}
+                              alt=""
+                            />
+                          </div>
+                          <div className="margcard mt-4">
+                            <ul className="list-group ">
+                              <li className="list-group-item list-group-action">
+                                Name: <span>{contact.name}</span>
+                              </li>
+                              <li className="list-group-item list-group-action">
+                                Mobile: <span>{contact.mobile}</span>
+                              </li>
+                              <li className="list-group-item list-group-action">
+                                Email: <span>{contact.email}</span>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div className="margcard mt-4">
-                          <ul className="list-group ">
-                            <li className="list-group-item list-group-action">
-                              Name: <span>{contact.name}</span>
-                            </li>
-                            <li className="list-group-item list-group-action">
-                              Mobile: <span>{contact.mobile}</span>
-                            </li>
-                            <li className="list-group-item list-group-action">
-                              Email: <span>{contact.email}</span>
-                            </li>
-                          </ul>
+                        <div id="btn" className="mb-3 mt-4 text-align-center">
+                          <Link
+                            className="btn btngroup btn-primary "
+                            to={`/Contact/Edit/${contact.id}`}
+                          >
+                            Edit
+                          </Link>
+
+                          <Link
+                            className="btn btngroup btn-success ml-3"
+                            to={`/Contact/View/${contact.id}`}
+                          >
+                            View
+                          </Link>
+
+                          <Link
+                            onClick={() => deleteContact(contact.id)}
+                            className="btn btngroup btn-danger ml-3"
+                          >
+                            Delete
+                          </Link>
                         </div>
-                      </div>
-                      <div id="btn" className="mb-3 mt-4 text-align-center">
-                        <Link
-                          className="btn btngroup btn-primary "
-                          to={`/Contact/Edit/${contact.id}`}
-                        >
-                          Edit
-                        </Link>
-
-                        <Link
-                          className="btn btngroup btn-success ml-3"
-                          to={`/Contact/View/${contact.id}`}
-                        >
-                          View
-                        </Link>
-
-                        <Link
-                          onClick={() => deleteContact(contact.id)}
-                          className="btn btngroup btn-danger ml-3"
-                        >
-                          Delete
-                        </Link>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+          </div>
         </div>
-      </div>
+      )}
     </React.Fragment>
   );
 };

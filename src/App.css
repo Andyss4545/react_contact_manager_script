@@ -13,7 +13,7 @@ body{
 }
 
 #headerSection .header-p{
-      margin-left: 0em;
+      margin-left: 3.5em;
 }
 
 #headerSection nav a p{
@@ -143,6 +143,13 @@ ul li{
 
 .formbtn{
       margin-bottom: 2em;
+}
+
+.spinner{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
 }
 
 @media screen and (max-width: 567px) {
