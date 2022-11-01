@@ -22,7 +22,7 @@ let EditContact = () => {
     errorMessage: " ",
   });
 
-  let { loading, contact, groups, errorMessage } = state;
+  let { loading, contact, groups } = state;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,6 +46,7 @@ let EditContact = () => {
     };
 
     fetchData();
+    //eslint-disable-next-line
   }, [ContactId]);
 
   let updateInput = (event) => {

@@ -13,7 +13,7 @@ let ViewContact = () => {
     group: {},
   });
 
-  let { contact, loading, group, errorMessage } = state;
+  let { contact, loading, group } = state;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -37,6 +37,7 @@ let ViewContact = () => {
     };
 
     fetchData();
+    //eslint-disable-next-line
   }, [ContactId]);
 
   return loading ? (

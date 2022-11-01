@@ -7,12 +7,13 @@ body{
 #headerSection{
      background-color: #003865;
 }
+
 #headerSection nav a {
      text-decoration: none;
 }
 
 #headerSection .header-p{
-      margin-left: 4em;
+      margin-left: 0em;
 }
 
 #headerSection nav a p{
@@ -142,6 +143,12 @@ ul li{
 
 .formbtn{
       margin-bottom: 2em;
+}
+
+@media screen and (max-width: 567px) {
+      #headerSection .header-p{
+            margin-left: -2.5em;
+      }
 }
 
 

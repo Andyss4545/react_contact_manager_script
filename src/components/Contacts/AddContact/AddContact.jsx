@@ -41,9 +41,10 @@ let AddContact = () => {
     };
 
     fetchData();
+    //eslint-disable-next-line
   }, []);
 
-  let { loading, contact, groups, errorMessage } = state;
+  let { contact, groups } = state;
 
   let updateInput = (event) => {
     event.preventDefault();
@@ -65,9 +66,7 @@ let AddContact = () => {
         let Response = await ContactService.createContact(state.contact);
 
         if (Response) {
-          {
-            navigate("/Contact/list", { replace: true });
-          }
+          navigate("/Contact/list", { replace: true });
         }
       } catch (error) {
         setState(() => ({ ...state, errorMessage: error }));
@@ -76,6 +75,7 @@ let AddContact = () => {
     };
 
     fetchData();
+    //eslint-disable-next-line
   };
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import ContactList from './components/Contacts/ContactList/ContactList';
 import NavBar from './components/NavBar/Navbar';
 import ViewContact from './components/Contacts/ViewContact/ViewContact';

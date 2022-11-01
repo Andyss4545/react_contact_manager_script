@@ -33,7 +33,7 @@ let ContactList = () => {
     errorMessage: "",
   });
 
-  let { filterContacts, Contacts, loading, errorMessage } = state;
+  let { filterContacts, Contacts, loading } = state;
 
   useEffect(() => {
     let fetchData = async () => {
@@ -56,6 +56,7 @@ let ContactList = () => {
     };
 
     fetchData();
+    //eslint-disable-next-line
   }, []);
 
   let deleteContact = async (ContactId) => {
