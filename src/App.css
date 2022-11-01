@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+     font-family: 'Ubuntu', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#headerSection{
+     background-color: #003865;
+}
+#headerSection nav a {
+     text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#headerSection .header-p{
+      margin-left: 4em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#headerSection nav a p{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#headerSection nav a p span{
+      color: #EF5B0C;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-regular{
+   color: #EF5B0C;
 }
+.logo{
+    padding: .5em 0 .8em 2em;
+}
+
+ .titleCon {
+      display: flex; 
+}  
+
+.titleCon p{
+        font-size: 1.8rem;
+        font-weight: bolder;
+        display: block;
+}
+
+#titleBtn{
+       background-color: #EF5B0C;
+       color: white;
+       border: none;
+       border-radius: 5px;
+        margin: .5em 0 1em 1em;
+}
+
+#titleBtn Link{
+      text-decoration: none;
+}
+
+
+
+.desc p {
+      font-size: 1.2em;
+}
+
+.imgcr img{
+      height: 200px;
+      width: 200px;
+}
+
+.bgprofile{
+       margin-top: 4em;
+}
+
+.bgprofile img{
+        display: block;
+         border-radius: 50%;
+         width: 150px;
+         height: 150px;
+         text-align: center;
+         margin: 0 auto;
+} 
+
+.btngroup{
+       margin-right: .5em;
+}
+
+.imgcr{
+       margin-bottom: 2em;
+}
+
+.imgcr img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      height: 30%;
+      border-radius: 50%;
+}
+
+
+ul li{
+      list-style: none;
+      text-align: center;
+      font-size: 1.2rem;
+}
+
+#btn{
+      text-align: center;
+}
+
+.h3Color{
+      color:  #EF5B0C;
+}
+
+.backbtn{
+       background-color: #EF5B0C;
+       border: none;
+       padding: .3em .5em;
+       border-radius: 5px;
+       margin: 3em 0 0 9.5em;
+}
+
+.backbtn a {
+       color: white;
+       text-decoration: none;
+}
+
+#list li {
+       text-align: left;
+       font-size: 1.2rem;
+       font-weight: bold;
+}
+
+#list li span {
+       font-weight: unset;
+       font-weight: lighter;
+       margin-left: .5em;
+}
+
+
+.btn-black{
+        margin-left: .8em;
+}
+
+.formbtn{
+      margin-bottom: 2em;
+}
+
+

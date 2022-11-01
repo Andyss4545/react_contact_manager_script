@@ -1,0 +1,73 @@
+#003865 - Navy
+#EF5B0C - Orange
+#D4F6CC - Green
+#3CCF4E - Retro
+rgb(0, 56, 101)
+rgb(239, 91, 12)
+rgb(212, 246, 204)
+rgb(60, 207, 78)
+
+
+
+card- #f1f3ce
+
+
+black - #141414
+
+
+Call Service on JSON Server
+
+
+json-server -> npm install  json-server
+
+json file -> npm init --yess
+
+
+
+<div className="col-md-6">
+            <div className="card my-3">
+              <div className="card-body">
+                <div className="row ">
+                  <div className="bgprofile align-item-center">
+                    <img
+                      className="contact-img img-fluid"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/800px-Pierre-Person.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="margcard mt-4">
+                    <ul className="list-group ">
+                      <li className="list-group-item list-group-action">
+                        Name: <span>Aaron Campbell</span>
+                      </li>
+                      <li className="list-group-item list-group-action">
+                        Mobile: <span>08172773886</span>
+                      </li>
+                      <li className="list-group-item list-group-action">
+                        Email: <span>aaroncampbell45@gmail.com</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="btn" className="mb-3 mt-4 text-align-center">
+                  <Link
+                    className="btn btngroup btn-primary "
+                    to={"/Contact/Edit"}
+                  >
+                    Edit
+                  </Link>
+
+                  <Link
+                    className="btn btngroup btn-success ml-3"
+                    to={"/Contact/View"}
+                  >
+                    View
+                  </Link>
+
+                  <button className="btn btngroup btn-danger ml-3">
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>

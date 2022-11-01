@@ -1,0 +1,107 @@
+{
+  "contacts": [
+    {
+      "id": "NUtqV4",
+      "name": "Leanne Graham",
+      "photo": "https://www.citypng.com/public/uploads/preview/png-round-blue-contact-user-profile-icon-11639786938sxvzj5ogua.png",
+      "mobile": "08172773886",
+      "email": "leannegraham@gmail.com",
+      "location": "Lagos, Nigeria",
+      "company": "HCF Technologies",
+      "title": "Lead Designer",
+      "groupId": "2"
+    },
+    {
+      "id": "1wjTgA",
+      "name": "Ervin Howell",
+      "photo": "https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png",
+      "mobile": "08172773886",
+      "email": "ervinhowell@gmail.com",
+      "location": "Cape Town, South Africa",
+      "company": "Xttrol Technologies",
+      "title": "UI/UX Designer",
+      "groupId": "6"
+    },
+    {
+      "id": "m4iR4B",
+      "name": "Clementine Bauch",
+      "photo": "https://thumbs.dreamstime.com/b/default-avatar-profile-flat-icon-vector-contact-symbol-illustration-184752213.jpg",
+      "mobile": "08172773886",
+      "email": "clementinebauch@gmail.com",
+      "location": "Toronto, Canada",
+      "company": "Google Inc",
+      "title": "Product Designer",
+      "groupId": "3"
+    },
+    {
+      "id": "vxju6L",
+      "name": "Patricia Lebsack",
+      "photo": "https://www.pngitem.com/pimgs/m/627-6275734_profile-icon-contacts-hd-png-download.png",
+      "mobile": "08172773886",
+      "email": "patricialebsack@gmail.com",
+      "location": "Mumbai, India",
+      "company": "Metaverse Techonlogies Solutions",
+      "title": "Web Developer",
+      "groupId": "5"
+    },
+    {
+      "id": "0zfXWL",
+      "name": "Chelsey Dietrich",
+      "photo": "https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/6222481c0ad8761618b18e7e_profile-picture.jpg",
+      "mobile": "08172773886",
+      "email": "chelseydietrich@gmail.com",
+      "location": "Moscow, Russia",
+      "company": "HCF Technologies",
+      "title": "Full Stack",
+      "groupId": "2"
+    },
+    {
+      "name": " Bradton Tate",
+      "email": "bradtontate980@gmail.com",
+      "photo": " https://www.kindpng.com/picc/m/24-248600_contact-profile-user-default-female-suit-comments-female.png",
+      "mobile": " +14556980883",
+      "location": " Massachusets, US",
+      "company": " Bradton Tech Services",
+      "title": " Chief Execute Officer",
+      "groupId": " ",
+      "id": "5XtPGU7"
+    },
+    {
+      "name": " Akindele Omosebi",
+      "email": "jacobakindele866@gmail.com",
+      "photo": " https://www.kindpng.com/picc/m/24-248600_contact-profile-user-default-female-suit-comments-female.png",
+      "mobile": " +14556980883",
+      "location": " Harare City",
+      "company": " Adele Technology Services",
+      "title": " Chief Technical Officer",
+      "groupId": "1",
+      "id": "KheVVMv"
+    }
+  ],
+  "Groups": [
+    {
+      "id": "1",
+      "name": "Operations"
+    },
+    {
+      "id": "2",
+      "name": "Product Design"
+    },
+    {
+      "id": "3",
+      "name": "Data Structure"
+    },
+    {
+      "id": "4",
+      "name": "Web Applications"
+    },
+    {
+      "id": "5",
+      "name": "API"
+    },
+    {
+      "id": "6",
+      "name": "Backend Dev"
+    }
+  ]
+}
